@@ -1,0 +1,289 @@
+.dialog {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.dialog button {
+    margin: 5px;
+}
+
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/461/760/non_2x/close-up-of-brown-color-cork-board-texture-background-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+[contenteditable="true"]:focus {
+    background-color: transparent;
+}
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#topDiv {
+    background-image: url("https://i.ibb.co/Bw1k1vL/notebook-page.webpp");
+    background-size: cover;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-position-y: -35px; */
+    margin-top: 40px;
+}
+
+.headerDiv h1 {
+    font-size: 60px;
+    font-family: quicksand;
+}
+
+.inputDiv label {
+    width: 100%;
+    font-weight: bold;
+    font-family: quicksand;
+}
+
+.notesDiv {
+    direction: ltr;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+.fade-out.show {
+    opacity: 0;
+}
+
+.notesDiv .noteContainer:hover button {
+    opacity: 1 !important;
+}
+
+
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .contentDiv {
+        width: 281px !important;
+        height: 120px !important;
+        margin-top: 8px;
+    }
+
+    .deleteButton {
+        top: -13px !important;
+        left: 113px !important;
+    }
+
+    .noteDataAndTimeDiv {
+        left: 113px !important;
+        top: 8px !important;
+    }
+
+    .noteTitleDiv {
+        width: 300px;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        /* width: 200px !important; */
+        /* margin-top: 30px !important; */
+    }
+
+
+}
+
+@media (max-width: 770px) {
+    .contentDiv {
+        width: 250px !important;
+        height: 100px !important;
+        margin-top: 8px;
+    }
+
+    .deleteButton {
+        left: 17px !important;
+        top: -6px !important;
+    }
+
+    .noteDataAndTimeDiv {
+        left: 22px !important;
+        bottom: 29px !important;
+    }
+
+    .noteTitleDiv {
+        width: 262px !important;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .deleteButton {
+        left: 91px !important;
+        top: -8px !important;
+    }
+
+    .noteDataAndTimeDiv {
+        left: 87px !important;
+        top: 37px !important;
+    }
+
+    .noteTitleDiv {
+        width: 300px !important;
+    }
+
+}
+
+/* @media (max-width: 1400px) {
+
+    .noteTitleDiv{
+        
+    }
+
+    .noteContainer {
+        width: 500px;
+        margin: 50px;
+    }
+
+    .deleteButton {
+        left: 85px !important;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .noteTitleDiv{
+        
+    }
+
+    .noteContainer {
+        width: 400px;
+        margin: 50px;
+    }
+
+    .deleteButton {
+        left: 32px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .notesDiv {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .noteContainer {
+        width: 300px;
+        height: 300px !important;
+    }
+
+    .noteTitleDiv {
+        width: 158px;
+    }
+
+    .noteTitle {
+        margin-top: 20px;
+    }
+
+    .deleteButton {
+        top: 74px !important;
+        left: 10px !important;
+    }
+
+    .noteDataAndTime {
+        margin-left: 0px !important;
+        margin-top: 0px !important;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .notesDiv {
+        grid-template-columns: 1fr;
+    }
+
+    .noteContainer {
+        width: 500px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        height: 500px !important;
+    }
+
+    .noteTitleDiv {
+        width: 326px !important;
+    }
+
+    .noteTitle {
+        margin-top: 70px;
+    }
+
+    .contentDiv{
+        margin-top: 23px !important;
+    }
+
+    .deleteButton {
+        top: 124px !important;
+        left: 36px !important;
+    }
+
+    .noteDataAndTime {
+        margin-left: 17px !important;
+        margin-top: 94px !important;
+    }
+}
+
+@media (max-width: 550px) {
+
+    #topDiv{
+        width: 490px;
+    }
+
+    #myNotesTitle{
+        /* width: 100%; 
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center;
+    }
+} */
