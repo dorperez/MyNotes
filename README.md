@@ -1,5 +1,5 @@
 # MyNotes
-<a target="_blank" href="https://ibb.co/dDYBBng"><img src="https://i.ibb.co/dDYBBng/image-2024-10-13-202009626.png" alt="image-2024-10-13-202009626" border="0"></a>
+<a href="https://ibb.co/dDYBBng" target="_blank"><img src="https://i.ibb.co/dDYBBng/image-2024-10-13-202009626.png" alt="image-2024-10-13-202009626" border="0"></a>
 
 My Notes is a simple and intuitive web application that allows users to create, manage, and organize their personal notes effortlessly. With features to input a title, description, date, and time for each note, users can keep track of important information and reminders in one convenient place.
 
