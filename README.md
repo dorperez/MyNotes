@@ -3,7 +3,9 @@
 
 <h1>My Notes</h1>
 
-<p><strong>My Notes</strong> is a simple and intuitive web application that enables users to effortlessly create, manage, and organize personal notes. With features that allow users to input a title, description, date, and time for each note, you can keep track of important information and reminders all in one convenient place.</p>
+<div style="text-align: center;">
+    <p><strong>My Notes</strong> is a simple and intuitive web application that enables users to effortlessly create, manage, and organize personal notes. With features that allow users to input a title, description, date, and time for each note, you can keep track of important information and reminders all in one convenient place.</p>
+</div>
 
 <h2>Features</h2>
 <ul>
